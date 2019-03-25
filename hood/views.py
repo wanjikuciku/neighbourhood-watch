@@ -101,14 +101,6 @@ def add_business(request):
     return render(request,'business.html',{'business_form':business_form})
 
 
-def change_neighborhood(request,neighborhood_id):
-    profile = UserProfile.objects.filter(user = request.user).first()
-    neighborhood = Neighborhood.objects.get(id=neighborhood_id)
-    profile.neighborhood = neighborhood
-    profile.save()
-    return redirect(reverse('neighborhood',args=[neighborhood.id]))
-
-
 def search(request):
     try:
         if 'business' in request.GET and request.GET['business']:
