@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+
+{% block content %}
+
+<div class="container" style="margin-top:10%;"></div>
+<!-- Intro Dashboard -->
+{% if user.neighborhood == null and request.user.id != 1 %}
+
+  <h3 style="text-align:center" class="center-align">What Neighborhood Do You Belong To?</h3>
+  <div class="row"></div>
+    {% for neighborhood in neighborhoods %}
+    
+      <a style="text-align:center" href="{% url 'neighborhood' neighborhood.id %}" class="nav-link" >{{neighborhood.neighborhood_name}}</a><hr>
+      
+    </div>
+    {% endfor %}
+  
+</div>
+{% endif %}
+{% endblock %}

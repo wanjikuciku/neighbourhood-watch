@@ -1,4 +1,4 @@
-{% load bootstrap4%}
+{% load bootstrap4 %}
 {% load static %}
 
 <!DOCTYPE html>
@@ -8,7 +8,7 @@
 
     {% block styles %}
     {% bootstrap_css%}
-        <link rel="stylesheet" href="{% static 'css/login.css' %}">
+       
 
         <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
 
@@ -26,7 +26,7 @@
         <div id="login-overlay" class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                
                 <h4 class="modal-title" id="myModalLabel">Neighborhood-watch</h4>
             </div>
             <div class="modal-body">
@@ -34,6 +34,8 @@
                     <div class="col-xs-6">
                         <div class="well">
                             <form id="loginForm" method="POST" action="/accounts/login/" novalidate="novalidate">
+                                {% csrf_token %}
+                    
                                 <div class="form-group">
                                     <label for="username" class="control-label">Username</label>
                                     <input type="text" class="form-control" id="username" name="username" value="" required="" title="Please enter you username" placeholder="example@gmail.com">
@@ -51,7 +53,7 @@
                                     </label>
                                     <p class="help-block">(if this is a private computer)</p>
                                 </div>
-                                <button type="submit" class="btn btn-success btn-block" <a href="/accounts/login">Sign In</a></button>
+                                <button type="submit" class="btn btn-success btn-block"> <a href="{% url 'index' %}">Sign In</a></button>
                                 
                             </form>
                         </div>
@@ -59,10 +61,10 @@
                     <div class="col-xs-6">
                         <p class="lead">Register now for <span class="text-success">FREE</span></p>
                         <ul class="list-unstyled" style="line-height: 2">
-                            <li><span class="fa fa-check text-success"></span> See all website UIs</li>
-                            <li><span class="fa fa-check text-success"></span> Fast rating</li>
-                            <li><span class="fa fa-check text-success"></span> Give a review on sites</li>
-                            <li><span class="fa fa-check text-success"></span> Learn the various UI designs</li>
+                            <li><span class="fa fa-check text-success"></span> See all posts for neighborhood</li>
+                            <li><span class="fa fa-check text-success"></span> Fast notifications</li>
+                            <li><span class="fa fa-check text-success"></span> Give feedback</li>
+                            <li><span class="fa fa-check text-success"></span> Change neighborhood</li>
                             <li><a href="/read-more/"><u>Read more</u></a></li>
                         </ul>
                         <p><a href="/accounts/register" class="btn btn-info btn-block">Yes please, register now!</a></p>
