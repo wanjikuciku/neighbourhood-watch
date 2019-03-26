@@ -40,18 +40,17 @@ python manage.py runserver
 ## Behaviour Driven Development
 |  Behaviour |  Input  |  Output |
 |------------|---------|---------|
-| The program should navigate to the index page on load | On page load | Navigate to the home/index page |
+| The program should navigate to the login page on load | On page load | Navigate to the login page |
 | The program should navigate to sign up page when Sign Up is clicked | Click on Sign Up on the navigation bar | Redirected to the sign up page |
-|The program should navigate to the login page when Login is clicked | Click on Login on the registration form |Redirected to the login page |
-|The program should direct the user to the home page when logged in | Click on See More |  Redirected to the single project page with the project's description |
-|The program should navigate to the vote form when Vote is clicked |  Click on Vote button |  A vote form pops up |
-|The program should navigate to the profile editing form when the My Account is clicked on the navigation bar | Click on My Account on the navigation bar |  Redirected to the profile editing form |
-|The program should load the live site on a new tab when View Site is clicked | Click on View Site | Live site of a specific project loads on a new tab|
+|The program should navigate to the login page when Logout is clicked on the navigation bar | The program should navigate to the login page when Logout is clicked on the navigation bar |  Redirected to the login page |
+|The program should direct the user to their neighborhood page when logged in and already has a neighborhood |  sign in | Redirected to their neighborhood page |
+|The program should direct the user to the index page with neighborhood listings when logged in and has no neighborhood | sign in | Redirect the user to the index page with neighborhood listings |
+|The program should navigate to the profile page when the My Profile is clicked on the navigation bar | Click on My Profile on the navigation bar  | Redirected to the profile page|
 
 ## Prerequisites
 You need the following to work on the project: -Python version 3.6 -Django -Pip -virtualenv -A text Editor
 
-## Link to Live Website https://lona-awards.herokuapp.com/
+## Link to Live Website https://community-watch.herokuapp.com/
 
 ## Known Bugs
 None at the moment, but if found please contact.
