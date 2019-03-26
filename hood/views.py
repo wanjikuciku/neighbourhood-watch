@@ -101,6 +101,7 @@ def add_business(request):
     return render(request,'business.html',{'business_form':business_form})
 
 
+
 def search(request):
     try:
         if 'business' in request.GET and request.GET['business']:

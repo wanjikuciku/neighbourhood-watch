@@ -11,7 +11,7 @@
   <div class="row"></div>
     {% for neighborhood in neighborhoods %}
     
-      <a style="text-align:center" href="{% url 'neighborhood' neighborhood.id %}" class="nav-link" >{{neighborhood.neighborhood_name}}</a><hr>
+      <a style="text-align:center" href="{% url 'neighborhood' neighborhood.id %}" class="nav-link" >{{neighborhood.neighborhood_name}} <i class="fas fa-city"></i></a><hr>
       
     </div>
     {% endfor %}

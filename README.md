@@ -1,5 +1,5 @@
 # Neighborhood-app
-An application that allows a user to join a neighborhood, post updates on the neighbourhood and have the emergency contacts . 24th March 2019
+An application that allows a user to join a neighborhood, post updates on the neighbourhood and have the emergency contacts. 24th March 2019
 ### By Lorna wanjiku
 
 ## Description
