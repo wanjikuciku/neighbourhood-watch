@@ -8,7 +8,7 @@ An application that allows a user to join a neighborhood, post updates on the ne
 ## Setup/Installation Requirements
 To start using this project use the following commands:
 
-* git clone https://github.com/wanjikuciku/neigborhood-watch.git
+* git clone https://github.com/wanjikuciku/neigbourhood-watch.git
 * cd awards
 * atom .
 * code . (this is if Visual Studio Code is your preferred text editor)
